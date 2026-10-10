@@ -1,8 +1,6 @@
 # Procedural Level Generation & Difficulty Classification with SmolLM2, Genetic Algorithms, Q-Learning & ML
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/FrancescaMicu/3DUPB_Computer_Vision/blob/main/proiect3DUPB.ipynb)
-
-Project developed for the **3D UPB Summer School 2026** (Computer Vision & AI track).
+Project developed for the **3D UPB Summer School 2026** (Computer Vision Workshop).
 
 ---
 
