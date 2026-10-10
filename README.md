@@ -4,7 +4,7 @@ Project developed for the **3D UPB Summer School 2026** (Computer Vision Worksho
 
 ---
 
-## 📌 Overview
+## Overview
 
 This project implements an end-to-end procedural content generation (PCG) pipeline for **TreeClimb**, a grid-based puzzle-platformer game. The system combines generative AI, evolutionary optimization, reinforcement learning, and supervised machine learning to create playable levels, test them autonomously, and classify their true gameplay difficulty.
 
@@ -12,7 +12,7 @@ Instead of relying on arbitrary difficulty tags, the pipeline closes the loop: *
 
 ---
 
-## 🎮 Game Mechanics & Tiles
+## Game Mechanics & Tiles
 
 The game is played on a **16x16 grid** where the agent starts at row 15 (`S`) and must reach the exit at row 0 (`E`) while collecting all Golden Ladders (`+`) as mandatory checkpoints:
 
@@ -30,7 +30,7 @@ The game is played on a **16x16 grid** where the agent starts at row 15 (`S`) an
 
 ---
 
-## ⚙️ Architecture Pipeline
+## Architecture Pipeline
 
 1. **LLM Level Generation (`SmolLM2-1.7B-Instruct`)**
    - Generates initial 16x16 ASCII layouts using structured prompts and temperature sampling.
@@ -56,20 +56,9 @@ The game is played on a **16x16 grid** where the agent starts at row 15 (`S`) an
 
 ---
 
-## 📊 Dataset & Model Features
+## Dataset & Model Features
 
 The classification dataset contains 113 unique levels characterized by:
 - Map elements: `normal_ladders`, `birds`, `beetles`, `vines`, `broken_ladders`
 - Agent telemetry: `len` (unique visited tiles), `steps`, `reward`
 - Outcome metrics: `won_greedy` (binary victory) and `win_rate` (continuous performance metric over last 100 episodes)
-
----
-
-## 🚀 Getting Started
-
-Open the notebook directly in Google Colab using the badge above, enable GPU runtime (`T4` or better), and run the cells sequentially to download weights, generate maps, and train models.
-
-### Dependencies
-- Python 3.10+
-- `torch`, `transformers`, `accelerate`, `bitsandbytes`
-- `numpy`, `pandas`, `scikit-learn`, `matplotlib`
