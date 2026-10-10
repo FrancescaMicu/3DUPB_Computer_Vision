@@ -1,4 +1,4 @@
-# Procedural Level Generation & Difficulty Classification with SmolLM2, Genetic Algorithms, Q-Learning & ML
+# SLM Level Generation & Difficulty Classification with SmolLM2, Genetic Algorithms, Q-Learning & ML
 
 Project developed for the **3D UPB Summer School 2026** (Computer Vision Workshop).
 
@@ -6,7 +6,7 @@ Project developed for the **3D UPB Summer School 2026** (Computer Vision Worksho
 
 ## Overview
 
-This project implements an end-to-end procedural content generation (PCG) pipeline for **TreeClimb**, a grid-based puzzle-platformer game. The system combines generative AI, evolutionary optimization, reinforcement learning, and supervised machine learning to create playable levels, test them autonomously, and classify their true gameplay difficulty.
+This project implements an end-to-end content generation pipeline for **TreeClimb**, a grid-based puzzle-platformer game. The system combines generative AI, evolutionary optimization, reinforcement learning, and supervised machine learning to create playable levels, test them autonomously, and classify their true gameplay difficulty.
 
 Instead of relying on arbitrary difficulty tags, the pipeline closes the loop: **the LLM dreams the level, the Genetic Algorithm builds it properly, Q-Learning plays it, and Logistic Regression gives the final verdict.**
 
